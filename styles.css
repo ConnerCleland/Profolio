@@ -1,0 +1,164 @@
+.This_is_the_big {
+    font-size: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(194, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), #aac0e4 linear-gradient(rgb(192, 187, 190) 52%, rgb(199, 220, 228) 60%, rgb(104, 144, 203) 61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: popUp 1.3s ease-in-out forwards, wave 900ms ease-in alternate-reverse infinite;
+    text-align: center;
+    text-shadow: black;
+    background-size: 100% 100%;
+    margin-top: 75px;
+}
+
+@keyframes popUp {
+    0% {
+        font-size: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        font-size: 50pt; 
+        transform: translateY(10%);
+    }
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 5vw 50px;
+    }
+}
+
+.This_has_a_lot_f_text {
+    margin: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    border: 5px solid white;
+    transition: transform 1s ease;
+    opacity: 80%;
+    padding: 15px;
+    animation: borderColorChange 4s ease infinite;
+}
+
+This_has_a_lot_f_text:hover {
+    transform: scale(1.08);
+}
+
+.This_contains_href{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.background-Family_fun {
+    background-image:url(images/Background.jpeg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    image-resolution: 300dpi; 
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+.image-To_contain_the_fun {
+    border: 5px solid #ddd;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.image-To_contain_the_fun img {
+    max-width: 100%;
+    height: auto;
+}
+@keyframes borderColorChange {
+    0% {
+        border-color: lime;
+    }
+    50% {
+        border-color: yellowgreen;
+    }
+    100% {
+        border-color: orchid;
+    }
+}
+
+
+.project-link img {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-left: 100pt;
+}
+
+.project-link :hover img {
+    border-color: yellow;
+    animation: borderColorChange 4s ease infinite;
+}
+
+.Click_me_crazy {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Click_me_crazy:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 768px) {
+    .image-To_contain_the_fun {
+        padding: 5px;
+    }
+
+    .Click_me_crazy{
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-To_contain_the_fun {
+        max-width: 100%;
+    }
+
+    .Click_me_crazy {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .Click_me_crazy {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+}
+.Fun_spinny_thingy {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    color: yellow;
+  }
+  
+  .Fun_spinny_thingy {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
