@@ -107,9 +107,10 @@ This_has_a_lot_f_text:hover {
     color: white;
     text-decoration: none;
     border-radius: 10px;
-    margin: 10px;
+    margin-left: 100px;
     font-size: 20px;
     font-weight: bold;
+    
 }
 
 .Click_me_crazy:hover {
@@ -144,21 +145,3 @@ This_has_a_lot_f_text:hover {
         padding: 3px 8px;
     }
 }
-.Fun_spinny_thingy {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    background-color: transparent;
-    color: yellow;
-  }
-  
-  .Fun_spinny_thingy {
-    display: inline-block;
-    animation: marquee 15s linear infinite;
-  }
-  
-  @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-  }
