@@ -12,18 +12,39 @@
     <section class="Click_me_crazy">
        <a class="This_contains_href" href="index.html">Go Back</a>
     </section>
-    <br>
-    <section>
-        <h1 class="This_is_the_big"> My <br>Skills</h1>
-    </section>
-    <section>
-        <p class="This_has_a_lot_f_text">
-            Html- 85%<br>
-            Css- 45%<br>
-            Python- 60%
-        </p>
-    </section>
-   
-    
+    <div id="circle-container"></div>
+    <div class="skills">
+        <ul>
+            <li>
+                <span class="skill-name">HTML</span>
+                <span class="skill-name">85%</span>
+                <div class="progress-bar">
+                    <div class="progress" id="html-progress" data-progress="85"></div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">CSS</span>
+                <span class="skill-name">78%%</span>
+                <div class="progress-bar">
+                    <div class="progress" id="css-progress" data-progress="78"></div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">GOLANG</span>
+                <span class="skill-name">60%</span>
+                <div class="progress-bar">
+                    <div class="progress" id="golang-progress" data-progress="60"></div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-name">60%</span>
+                <div class="progress-bar">
+                    <div class="progress" id="js-progress" data-progress="60"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

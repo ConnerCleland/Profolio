@@ -145,3 +145,66 @@ This_has_a_lot_f_text:hover {
         padding: 3px 8px;
     }
 }
+
+.skills {
+    color: aliceblue;
+}
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+.skills li {
+    margin-bottom: 20px;
+}
+.progress-bar {
+    background-color: navajowhite;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    transition: width 1s ease-in-out;
+}
+
+.progress-bar:hover .progress::after {
+    content: attr(data-progress) "%";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 2s ease-in;
+}
+.progress-bar:hover .progress {
+    width: 100%;
+    background-color: #4caf50;
+    transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+.Change_This {
+    color: #4caf50;
+}
+#date ,#time {
+    color: aqua;
+    font-size: larger;
+    text-align: center;
+    position: sticky;
+    object-fit: cover;
+    top: 0;
+    padding: 10px;
+    white-space: nowrap;
+}
+#date:hover , #time:hover {
+    transition: 1.03s ease-in-out;
+    font-size: 30px;
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
