@@ -89,17 +89,16 @@ This_has_a_lot_f_text:hover {
 }
 
 
-.project-link img {
+.project-link .project-image {
     border: 2px solid transparent;
     border-radius: 5px;
     margin-left: 100pt;
 }
 
-.project-link :hover img {
+.project-link .project-image.border-change {
     border-color: yellow;
     animation: borderColorChange 4s ease infinite;
 }
-
 .Click_me_crazy {
     display: inline-block;
     padding: 10px 20px;
@@ -207,4 +206,8 @@ This_has_a_lot_f_text:hover {
     width: 100%;
     background-color: #333;
     z-index: 1000;
+}
+#date:hover::after {
+    transition: 1.03s ease-in-out;
+    font-size: 15px;
 }
